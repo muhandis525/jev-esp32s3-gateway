@@ -1,0 +1,15 @@
+# Local credentials. Never commit or embed these in firmware images.
+jev.txt
+.env
+secrets/
+__pycache__/
+*.py[cod]
+
+# ESP-IDF build/configuration output.
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+
+# Host test output.
+tests/host/test_command

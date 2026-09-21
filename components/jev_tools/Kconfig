@@ -1,0 +1,47 @@
+menu "Jev minimal ESP32-S3-MINI-1 profile"
+
+    comment "4 MB flash, no PSRAM required, USB Serial/JTAG console"
+
+    comment "Avoid GPIO0,3,19,20,22-32,45,46; firmware rejects them"
+
+    config JEV_LED_GPIO
+        int "Digital output 'led' GPIO (-1 disables)"
+        range -1 48
+        default -1
+
+    config JEV_RELAY_GPIO
+        int "Digital output 'relay' GPIO (-1 disables)"
+        range -1 48
+        default -1
+
+    config JEV_BUTTON_GPIO
+        int "Digital input 'button' GPIO (-1 disables)"
+        range -1 48
+        default -1
+
+    config JEV_ANALOG_GPIO
+        int "ADC input 'analog' GPIO (-1 disables)"
+        range -1 20
+        default -1
+
+    config JEV_PWM_GPIO
+        int "PWM output 'fan' GPIO (-1 disables)"
+        range -1 48
+        default -1
+
+    config JEV_SERVO_GPIO
+        int "Servo output 'servo' GPIO (-1 disables)"
+        range -1 48
+        default -1
+
+    config JEV_I2C_SDA_GPIO
+        int "I2C SDA GPIO (-1 disables scan)"
+        range -1 48
+        default -1
+
+    config JEV_I2C_SCL_GPIO
+        int "I2C SCL GPIO (-1 disables scan)"
+        range -1 48
+        default -1
+
+endmenu

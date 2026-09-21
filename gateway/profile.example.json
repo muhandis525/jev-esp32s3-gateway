@@ -1,0 +1,9 @@
+{
+  "digital_outputs": ["led", "relay"],
+  "digital_inputs": ["button"],
+  "analog_inputs": ["analog"],
+  "pwm_outputs": ["fan"],
+  "servo_outputs": ["servo"],
+  "i2c_enabled": false
+}
+
