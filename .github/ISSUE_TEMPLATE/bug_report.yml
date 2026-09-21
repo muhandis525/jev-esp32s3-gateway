@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible problem
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the expected and actual behavior.
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Board and flash size
+      placeholder: ESP32-S3, 4 MB flash
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or reproduction steps
+      description: Remove Wi-Fi passwords, PoPs, API tokens, and other secrets.
+      render: text

@@ -1,0 +1,12 @@
+name: Feature request
+description: Suggest an improvement or new integration
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to add?
+      description: Explain the user problem and a possible solution.
+    validations:
+      required: true

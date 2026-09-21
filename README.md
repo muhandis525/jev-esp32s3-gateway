@@ -1,5 +1,14 @@
 # Jev ESP32-S3 firmware
 
+[![Tests](https://github.com/muhandis525/jev-esp32s3-gateway/actions/workflows/test.yml/badge.svg)](https://github.com/muhandis525/jev-esp32s3-gateway/actions/workflows/test.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
+
+Turn a plain-language request into a safe, authenticated ESP32-S3 action.
+Jev combines BLE onboarding, Wi-Fi control, a strict command language, and
+hardware safety gates in a small open-source gateway.
+
+**Try first:** run `make test`, then read the [factory flashing guide](release/README.md).
+
 Connected ESP-IDF firmware for an ESP32-S3-MINI-1-class module, plus a host gateway that uses TypeSafe Jev to translate short natural-language requests into safe sensor and actuator commands. The baseline is 4 MB flash with no PSRAM requirement. It also runs on larger ESP32-S3 variants.
 
 The project intentionally keeps intelligence and authority separate:
